@@ -2,7 +2,7 @@
 //  SwiftDataJournalApp.swift
 //  SwiftDataJournal
 //
-//  Created by Parker Rushton on 5/30/25.
+//  Created by Parker Rushton on 6/4/25.
 //
 
 import SwiftUI
@@ -12,7 +12,8 @@ import SwiftData
 struct SwiftDataJournalApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Journal.self,
+            Entry.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -25,8 +26,9 @@ struct SwiftDataJournalApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            JournalsView()
+                .modelContext(sharedModelContainer.mainContext)
         }
-        .modelContainer(sharedModelContainer)
     }
+
 }
