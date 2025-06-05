@@ -10,9 +10,22 @@
 		2EE367C32DEACE04001BF554 /* SwiftDataJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2EACFA192DF17577009F6DDA /* Exceptions for "SwiftDataJournal" folder in "SwiftDataJournal" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Views/EntriesView.swift,
+			);
+			target = 2EE367C22DEACE04001BF554 /* SwiftDataJournal */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		2EE367C52DEACE04001BF554 /* SwiftDataJournal */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2EACFA192DF17577009F6DDA /* Exceptions for "SwiftDataJournal" folder in "SwiftDataJournal" target */,
+			);
 			path = SwiftDataJournal;
 			sourceTree = "<group>";
 		};

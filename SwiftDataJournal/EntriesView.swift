@@ -103,6 +103,7 @@ extension EntriesView {
             let entry = filteredEntries[i]
             context.delete(entry)
         }
+        try? context.save()
     }
 
 }
