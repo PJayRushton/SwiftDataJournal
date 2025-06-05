@@ -117,6 +117,7 @@ struct AddEditEntryView: View {
     func update(_ entry: Entry) {
         entry.title = title
         entry.body = bodyString
+        entry.updatedAt = Date()
         // BD
 //        entry.imageData = selectedImage?.jpegData(compressionQuality: 0.75)
         try? context.save()
